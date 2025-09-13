@@ -1,0 +1,48 @@
+"""Constants used throughout the face processing pipeline."""
+
+# Image processing constants
+DEFAULT_MAX_IMAGE_SIZE = 2048
+DEFAULT_ALIGN_SIZE = 112
+DEFAULT_MAX_FACES_PER_IMAGE = 10
+MIN_FACE_SIZE = 32
+
+# Quality assessment constants
+DEFAULT_BLUR_THRESHOLD = 100.0
+OPTIMAL_BRIGHTNESS = 127.5
+MAX_BRIGHTNESS_DEVIATION = 127.5
+BLUR_NORMALIZATION_FACTOR = 500.0
+
+# Quality score weights
+BLUR_WEIGHT = 0.4
+BRIGHTNESS_WEIGHT = 0.3
+DISTANCE_WEIGHT = 0.3
+
+# Detection confidence thresholds
+MIN_DETECTION_CONFIDENCE = 0.6
+DEFAULT_DETECTION_THRESHOLD = 0.5
+
+# Clustering constants
+DEFAULT_CLUSTER_SIMILARITY_THRESHOLD = 0.85
+MIN_CLUSTER_SIZE = 2
+NOISE_CLUSTER_ID = -1
+
+# Embedding constants
+DEFAULT_EMBEDDING_DIMENSION = 512
+
+# File processing constants
+DEFAULT_BATCH_SIZE = 32
+MAX_BATCH_SIZE = 64
+DEFAULT_MAX_WORKERS = 8
+MAX_WORKERS_MULTIPLIER = 2
+MAX_ABSOLUTE_WORKERS = 32
+
+# Image extensions
+SUPPORTED_IMAGE_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.tif', '.webp'}
+
+# Storage constants
+DEFAULT_JPEG_QUALITY = 95
+TEMP_JPEG_QUALITY = 90
+COMPRESSION_THRESHOLD_MB = 1  # 1MB threshold for compression
+
+# Memory management
+DEFAULT_MAX_MEMORY_USAGE_MB = 100

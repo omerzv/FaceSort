@@ -24,11 +24,7 @@
 * [Project Structure](#-project-structure)
 * [Usage Examples](#-usage-examples)
 * [Output](#-output)
-* [Troubleshooting](#-troubleshooting)
-* [Roadmap](#-roadmap)
-* [Contributing](#-contributing)
-* [License](#-license)
-* [Acknowledgements](#-acknowledgements)
+
 
 ---
 
@@ -284,44 +280,3 @@ python face_clustering_main.py
 * **Statistics** — Processing metrics and performance data
 * **CLI Visualization** — Rich terminal output with progress tracking
 
----
-
-## 🐛 Troubleshooting
-
-* **GPU OOM / Memory Limits** — Lower `batch_size` in config.
-* **Too Many Clusters** — Increase `eps`.
-* **Too Few Clusters** — Decrease `eps`.
-* **Chat Feels Slow** — Use `typing fast` or `typing off`; try `typing cap 200`.
-* **Slow Startup** — First run may download models; subsequent runs are faster.
-
----
-
-## 🗺️ Roadmap
-
-* [ ] Optional Web UI (local)
-* [ ] Export embeddings & metadata (Parquet/Feather)
-* [ ] Interactive 3D visualization (UMAP/PCA)
-* [ ] Semi‑supervised merge/split tooling
-* [ ] Dataset audit reports (per‑cluster quality)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please open an issue to discuss larger changes, or submit a PR with:
-
-* A clear description & motivation
-* Minimal reproducible example (if bug)
-* Tests and/or before/after results when relevant
-
----
-
-## 📄 License
-
-Choose a license (e.g., MIT) and update the badge + this section.
-
----
-
-## 🙏 Acknowledgements
-
-Built with ❤️ using **InsightFace**, **HDBSCAN**, **scikit‑learn**, **OpenCV**, and modern Python practices.
